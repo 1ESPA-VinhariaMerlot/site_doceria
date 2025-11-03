@@ -7,12 +7,12 @@
 }
 
 body {
-    background-color: #f0f0f0;
+    background-color: #B2A97F;
     font-family: "Cascadia Code", sans-serif;
     
 }
 header {
-    background-color: #fff; /* Fundo branco para o cabeçalho */
+    background-color: #FDCEC7; /* Fundo branco para o cabeçalho */
     color: #333; /* Cor do texto do cabeçalho */
     padding: 20px; /* Espaçamento interno */
     display: flex; /* Para alinhar os itens horizontalmente */
