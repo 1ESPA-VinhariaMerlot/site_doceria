@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <header>
+        <h1 id="logo">Projeto</h1>
+        <nav>
+            <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="./quiz.html">Quiz</a></li>
+           <li><a href="#">Contato</a></li> 
+
+           <div class="mudarCor">
+            <input type="button" class="cor"  onclick="trocar('#3ae4b1')"/>
+            <input type="button" class="cor"  onclick="trocar('#c13af2')"/>
+            <input type="button" class="cor"  onclick="trocar('#fbff24')"/>
+            </div>
+        </ul>
+          
+        </nav>
+    </header>
+
+
+    <main id="container-quiz">
+
+
+        <div class="quiz">
+                <h1>Faça seu Orçamento</h1>
+    
+            <section id="container-perguntas">
+                <h2 id="pergunta"></h2>
+                <div id="container-respostas">
+                    <input type="text" id="resposta" placeholder="Digite sua resposta aqui">
+                </div>
+                <button id="proximo">Próxima Pergunta</button>
+                <p id="message"></p>
+            </section>
+    
+            <section id="container-resultado" class="hidden">
+                <h2>Seu Orçamento Detalhado</h2>
+                <ul id="lista-resultado"></ul>
+                <button id="inicio-btn">Refazer Orçamento</button>
+            </section>
+        </div>
+      
+    </main>
+
+    <footer>
+        <p>&copy;-2025- todos os direitos reservados.</p>
+    </footer>
+
+    
+
+
+    <script src="../js/quiz.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

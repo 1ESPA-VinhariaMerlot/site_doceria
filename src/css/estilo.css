@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: "Cascadia Code", sans-serif;
+    
+}
+header {
+    background-color: #fff; /* Fundo branco para o cabeçalho */
+    color: #333; /* Cor do texto do cabeçalho */
+    padding: 20px; /* Espaçamento interno */
+    display: flex; /* Para alinhar os itens horizontalmente */
+    justify-content: space-between; /* Espaço máximo entre os itens */
+    align-items: center; /* Alinhar verticalmente ao centro */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex; /* Alinhar os links de navegação horizontalmente */
+    gap: 20px; /* Espaçamento entre os links */
+}
+
+header nav ul li a{
+    text-decoration: none; /* Remover sublinhado padrão dos links */
+    color: #555; /* Cor dos links */
+    font-weight: bold; /* Texto em negrito */
+    transition: color 0.3s ease; /* Transição suave para a cor ao passar o mouse */
+}
+
+header nav ul li a:hover {
+    color: #3ae4b1; /* Cor do link ao passar o mouse */
+}
+
+
+header #logo{
+    width: 50px;
+    height: 50px;
+}
+
+
+/* BANNER */
+.banner #image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /*ocupa o espaço todo*/
+}
+
+
+/* Estilos para a div de mudar cor */
+.mudarCor {
+    display: flex; /* Alinhar os botões de cor horizontalmente */
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+
+
+.cor {
+    width: 30px; /* Largura dos botões de cor */
+    height: 30px; /* Altura dos botões de cor */
+    border: none; /* Remover borda padrão */
+    border-radius: 50%; /* Tornar os botões circulares */
+    cursor: pointer; /* Mudar o cursor ao passar por cima */
+    background-image: linear-gradient(#3ae4b1,#c13af2,#fbff24);
+}
+
+
+
+.resultado {
+    max-width: 800px; /* Largura máxima do container de resultado */
+    margin: 30px auto; /* Centralizar horizontalmente e adicionar margem superior/inferior */
+    background-color: #fff; /* Fundo branco para o resultado */
+    padding: 30px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada */
+    text-align: center; /* Centralizar o texto dentro do resultado */
+}
+
+#msg {
+    font-size: 1.2em; /* Tamanho da fonte da mensagem */
+    color: #555; /* Cor da mensagem */
+    margin-bottom: 20px; /* Espaçamento abaixo da mensagem */
+}
+
+footer{
+    margin-top: 70vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*quiz*/
+#container-quiz{
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.quiz{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+.quiz h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+#container-perguntas h2 {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+#container-respostas {
+    margin-bottom: 20px;
+}
+
+#resposta {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#proximo {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#proximo:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#container-resultado {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#container-resultado h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#lista-resultado {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-resultado li {
+    margin-bottom: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#lista-resultado li:last-child {
+    border-bottom: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#inicio-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#inicio-btn:hover {
+    background-color: #1e7e34;
+}
+
+/* Media Queries para telas menores (ex: tablets e celulares) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Empilhar os itens do cabeçalho verticalmente */
+        align-items: center; /* Centralizar os itens */
+        text-align: center; /* Centralizar o texto dentro do cabeçalho */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Empilhar os links de navegação verticalmente */
+        align-items: center; /* Centralizar os links */
+        margin-top: 10px; /* Adicionar um pouco de espaço entre o logo e a navegação */
+        gap: 10px; /* Reduzir ainda mais o espaçamento entre os links */
+    }
+
+    .banner #image {
+        height: auto; /* Ajustar a altura automaticamente */
+    }
+
+    .quiz {
+        width: 95%; /* Ocupar ainda mais largura em telas menores */
+        padding: 15px; /* Reduzir o padding interno */
+    }
+
+    .quiz h1 {
+        font-size: 1.3em; /* Reduzir um pouco mais o título */
+    }
+
+    #container-perguntas h2 {
+        font-size: 1em; /* Reduzir um pouco mais a pergunta */
+    }
+
+    #resposta, #proximo, #inicio-btn {
+        font-size: 12px; /* Reduzir o tamanho da fonte dos elementos do quiz */
+        padding: 6px 12px; /* Reduzir o padding dos botões e input */
+    }
+
+    .resultado {
+        padding: 15px; /* Reduzir o padding do resultado */
+    }
+
+    #msg {
+        font-size: 0.9em; /* Reduzir o tamanho da fonte da mensagem de resultado */
+    }
+
+    footer {
+        font-size: 0.8em; /* Reduzir o tamanho da fonte do footer */
+        padding: 15px 10px; /* Aumentar um pouco o padding vertical e reduzir o horizontal */
+    }
+}
+
+/* Media Query para telas ainda menores (celulares pequenos) */
+@media (max-width: 480px) {
+    header #logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    header nav ul li a {
+        font-size: 0.9em; /* Reduzir ainda mais o tamanho da fonte dos links */
+    }
+
+    .mudarCor {
+        flex-wrap: wrap; /* Quebrar os botões de cor para a próxima linha se não houver espaço */
+        justify-content: center; /* Centralizar os botões */
+    }
+
+    .cor {
+        width: 20px;
+        height: 20px;
+        margin: 5px; /* Adicionar um pouco de margem entre os botões quebrados */
+    }
+}
