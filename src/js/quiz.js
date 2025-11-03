@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const reiniciarBotao = document.getElementById('inicio-btn');
 
     const questions = [
-        "Qual o tipo de serviço que você procura?",
-        "Descreva brevemente suas necessidades:",
-        "Qual o seu prazo ideal?",
-        "Qual o seu orçamento estimado?",
-        "Como podemos entrar em contato com você (e-mail ou telefone)?",
+        "Qual seu nível favorito de doçura? De: 1-5 (Sendo 1-pouco doce; 5-extremamente doce)",
+        "Você prefere doces com fruta ou sem fruta? (Se preferir com, diga-nos qual!)",
+        "Você prefere doces cremosos, crocantes ou macios??",
+        "Tem alguma restrição alimentar (ex: sem lactose, sem glúten, vegano)??",
+        "Você gosta de experimentar novos sabores sempre que lança algo novo?(Deixe seu email e telefone para conseguirmos lhe contactar para eventos da casa!",
     ];
 
     let pertuntas = 0;
