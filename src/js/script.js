@@ -3,9 +3,10 @@
 //DECLARANDO UM ARRAY DE IMAGENS
 
 let imagens=[
-    'src/assets/imgCar1.jpg',
-    'src/assets/imgCar2.jpg',
-    'src/assets/imgCar3.jpg',
+    'src/assets/img1.jpg',
+    'src/assets/img2.jpg',
+    'src/assets/img3.jpg',
+    'src/assets/img4.jpg'
 ];
 //DECLARANDO AS VARAIVEIS
 let i =0;

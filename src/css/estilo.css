@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Cedarville+Cursive&family=Krona+One&family=Limelight&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ms+Madi&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@600&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Rozha+One&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
 
 *{
     margin:0;
@@ -7,18 +7,20 @@
 }
 
 body {
-    background-color: #B2A97F;
-    font-family: "Cascadia Code", sans-serif;
+    background-color: #E7C8A3;
+    font-family: "Oswald", sans-serif;
     
 }
+
 header {
-    background-color: #FDCEC7; /* Fundo branco para o cabeçalho */
-    color: #333; /* Cor do texto do cabeçalho */
+    background-color: #B2A97F; /* Fundo branco para o cabeçalho */
+    color: #FDCEC7; /* Cor do texto do cabeçalho */
+    font-size: 1.2em; /* Tamanho da fonte do cabeçalho */
     padding: 20px; /* Espaçamento interno */
     display: flex; /* Para alinhar os itens horizontalmente */
     justify-content: space-between; /* Espaço máximo entre os itens */
     align-items: center; /* Alinhar verticalmente ao centro */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 2px 5px rgba(192, 148, 180, 0.1); /* Sombra suave */
 }
 
 header nav ul {
@@ -29,13 +31,12 @@ header nav ul {
 
 header nav ul li a{
     text-decoration: none; /* Remover sublinhado padrão dos links */
-    color: #555; /* Cor dos links */
-    font-weight: bold; /* Texto em negrito */
+    color: #FDCEC7; /* Cor dos links */
     transition: color 0.3s ease; /* Transição suave para a cor ao passar o mouse */
 }
 
 header nav ul li a:hover {
-    color: #3ae4b1; /* Cor do link ao passar o mouse */
+    color: #FF998E; /* Cor do link ao passar o mouse */
 }
 
 
@@ -67,7 +68,7 @@ header #logo{
     border: none; /* Remover borda padrão */
     border-radius: 50%; /* Tornar os botões circulares */
     cursor: pointer; /* Mudar o cursor ao passar por cima */
-    background-image: linear-gradient(#3ae4b1,#c13af2,#fbff24);
+    background-image: linear-gradient(45deg, #FF9A9E 0%, #FAD0C4 100%); /* Exemplo de gradiente */
 }
 
 
@@ -89,9 +90,11 @@ header #logo{
 }
 
 footer{
+    background-color: #B2A97F;
+    padding: 3rem 2rem;
+    color: #FDCEC7;
     margin-top: 70vh;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 
@@ -120,7 +123,10 @@ footer{
 }
 
 h1 {
-    color: #333;
+    color: #FDCEC7;
+    border-color: #FF998E;
+    font-family: "Ms Madi", cursive;
+    font-size: 2em;
 }
 
 #container-perguntas h2 {
@@ -141,7 +147,7 @@ h1 {
 }
 
 #proximo {
-    background-color: #007bff;
+    background-color: #FF998E;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -152,7 +158,7 @@ h1 {
 }
 
 #proximo:hover {
-    background-color: #0056b3;
+    background-color: #FDCEC7;
 }
 
 #message {
@@ -192,7 +198,7 @@ h1 {
 }
 
 #inicio-btn {
-    background-color: #28a745;
+    background-color: #FF998E;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -204,7 +210,7 @@ h1 {
 }
 
 #inicio-btn:hover {
-    background-color: #1e7e34;
+    background-color: #FDCEC7;
 }
 
 /* Media Queries para telas menores (ex: tablets e celulares) */
