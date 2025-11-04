@@ -31,7 +31,35 @@
         <img id="image" src="./src/assets/banner.jpg" alt="Imagem"/>
     </section>
     <main>
+        <form>
+            <fieldset>
+                <legend>Faça um Orçamento:</legend>
+                <br>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" placeholder="Digite seu nome...">
+                <br><br>
+                <label for="telefone">Telefone:</label>
+                <input type="text" name="telefone" placeholder="Digite seu telefone...">
+                <br><br>
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" placeholder="Digite seu e-mail...">
 
+                <br><br>
+                <label>Tipo de Evento:</label>
+                <select name="tipo_evento">
+                    <option value="casamento">Casamento</option>
+                    <option value="aniversario">Aniversário</option>
+                    <option value="corporativo">Corporativo</option>
+                    <option value="outros">Outros</option>
+                </select>
+                <br><br>
+                <label>Detalhes do Pedido:</label>
+                <textarea name="detalhes" placeholder="Descreva os detalhes do pedido..."></textarea>
+
+                <br><br>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
     </main>
     <footer>
         <p>Doçura em cada detalhe, elegância em cada mordida.</p>
